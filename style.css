@@ -11,6 +11,11 @@
   text-decoration: none;
   overflow-x: none;
 }
+/* main, footer{
+  max-width: 1600px;
+  padding: 80px 0;
+  margin: 0 auto;
+} */
 
 header {
   width: 100vw;
@@ -101,6 +106,7 @@ header {
 }
 .carte {
   display: flex;
+  position: relative;
   width: 358px;
   height: 215px;
   background-color: #0e1a3e;
@@ -117,15 +123,20 @@ header {
   position: relative;
 }
 .carte-infos h3 {
+  position: absolute;
+  left: -35%;
   font-family: DM Serif Display;
   font-size: 2rem;
   font-weight: 400;
-  position: relative;
+}
+.carte-infos p{
+  position: absolute;
+  top: 40%;
 }
 .carte-infos span{
   font-size: 0.875rem;
-  position: relative;
-  bottom: -20px;
+  position: absolute;
+  bottom: 10px;
 }
 .voir-plus-container {
   width: 100%;
@@ -308,17 +319,27 @@ footer ul li a{
     display: none;
   }
 
-  /* Carte  */
+  /* Aide icon  */
   .aide-icon{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 15px;
+    gap: 0;
   }
   .aide-icon figure{
     flex-direction: column;
   }
-
-
+  .aide-icon figure:nth-child(1), .aide-icon figure:nth-child(3){
+    border-right: 2px solid #fff;
+    padding: 15px;
+  }
+  .aide-icon figure:nth-child(3), .aide-icon figure:nth-child(4){
+    border-top: 2px solid #fff;
+    padding: 15px;
+  }
+  .aide-icon figure:nth-child(2){
+    padding: 15px;
+  }
 
   /* Classe de la flemme */
 
