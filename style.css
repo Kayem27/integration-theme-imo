@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+  font-size: 16px;
+  list-style: none;
+  text-decoration: none;
+  overflow-x: none;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+}
+.navigation {
+  width: 100%;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  background-color: #0e1a3e;
+}
+.navigation .nav-logo {
+  width: 55px;
+  height: 56px;
+  margin-left: 20px;
+}
+.hero {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background-image: url(./img/Rectangle\ 4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  background-color: #0e1a3e;
+  padding: 10px;
+  border-radius: 6px;
+  gap: 10px;
+}
+.formulaire h2 {
+  color: #ffffff;
+}
+#search {
+  height: 36px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+#search::placeholder {
+  font-size: 0.6rem;
+  line-height: 12.1px;
+  text-align: center;
+}
+.btn-search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.btn-search input {
+  width: 114px;
+  height: 27px;
+  color: #ffff;
+  font-size: 0.75rem;
+  border: none;
+  border-radius: 6px;
+}
+.btn-achat {
+  background-color: #3bcc38;
+}
+.btn-loue {
+  background-color: #cb3f4f;
+}
+
+/* Secton 1 */
+.section-decouverte {
+  /* width: 100%; */
+  margin: 0 50px;
+}
+.section-decouverte h2 {
+  font-family: DM Serif Display;
+  font-size: 3rem;
+  margin: 20px 0;
+}
+.carte-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.carte {
+  display: flex;
+  width: 358px;
+  height: 215px;
+  background-color: #0e1a3e;
+}
+.carte figure {
+  border: 1px solid black;
+  width: 50%;
+  clip-path: polygon(0 0, 45% 0, 100% 100%, 0% 100%);
+}
+.carte-infos {
+  background-color: #0e1a3e;
+  color: #fff;
+  width: 50%;
+  position: relative;
+}
+.carte-infos h3 {
+  font-family: DM Serif Display;
+  font-size: 2rem;
+  font-weight: 400;
+  position: relative;
+}
+.carte-infos span{
+  font-size: 0.875rem;
+  position: relative;
+  bottom: -20px;
+}
+.voir-plus-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btn-voir-plus {
+  width: 211px;
+  color: #fff;
+  background-color: #3bcc38;
+  padding: 6px 40px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 50px;
+}
+
+/* Section aide */
+.section-aide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  background-color: #0e1a3e;
+  color: #fff;
+}
+
+.section-aide h2 {
+  font-family: DM Serif Display;
+  font-size: 3rem;
+  margin: 40px 0;
+}
+.aide-icon {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.aide-icon figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+
+/* Article trouver maison */
+
+.trouver-maison {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 60px;
+  /* align-items: center; */
+}
+.trouver-maison-infos {
+  width: 40%;
+  margin-left: 50px;
+  position: relative;
+}
+.h3-trouver-maison{
+    font-family: DM Serif Display;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 30px 0;
+}
+.span-trouver-maison{
+    position: absolute;
+    bottom: 20px;
+    font-family: DM Serif Display;
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+.trouver-maison-infos h3 {
+  font-family: DM Serif Display;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 30px 0;
+}
+.trouver-maison-infos p {
+  font-size: 1.175rem;
+}
+
+.trouver-maison-image {
+  width: 60%;
+  height: 430px;
+  clip-path: polygon(32% 0, 100% 0, 100% 100%, 0% 100%);
+}
+.trouver-maison-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Article 2 */
+.maison-confiance {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.confiance-image {
+  width: 70%;
+  height: 430px;
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+}
+.confiance-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.confiance-infos {
+  width: 40%;
+  margin-left: 50px;
+  position: relative;
+}
+.maison-confiance:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.maison-confiance:nth-child(odd) .confiance-image img{
+    /* transform: scaleX(-1);  */
+}
+.reverse{
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%) !important;
+}
+
+
+/* Footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #081027;
+  flex-wrap: wrap;
+}
+footer figure{
+  display: flex;
+  align-items: center;
+}
+footer figure img{
+  width: 122px;
+  height: 124px;
+}
+footer ul{
+  margin: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer ul li a{
+  color: #fff;
+}
+
+
+/* Responsive mobile */
+@media (max-width: 720px) { 
+  /* Header */
+  header{
+    height: 60vh;
+  }
+  .formulaire{
+    background: #FFFFFFCC; ;
+  }
+  .formulaire h2{
+    color: #000;
+  }
+
+  /* Main */
+  .section-aide{
+    align-items: flex-start;
+  }
+  .section-aide h2{
+    font-size: 1.5rem;
+    margin: 40px 20px;
+  }
+  .section-decouverte h2{
+    margin: 30px 0;
+    font-size: 1.5rem;
+    /* text-wrap: nowrap; */
+  }
+  .none{
+    display: none;
+  }
+
+  /* Carte  */
+  .aide-icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 15px;
+  }
+  .aide-icon figure{
+    flex-direction: column;
+  }
+
+
+
+  /* Classe de la flemme */
+
+  article figure::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.4;
+    background-color: #000;
+  }
+
+  /* ***** */
+
+  .trouver-maison-infos{
+    display: none;
+  }
+  .trouver-maison-image{
+    position: relative;
+    width: 100%;
+    clip-path: none !important;
+  }
+  .figcaption{
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    text-align: center;
+  }
+  .figcaption h3{
+    font-family: DM Serif Display;
+    font-size: 1.75rem;
+    font-weight: 400;
+
+  }
+  .confiance-image{
+    width: 100%;
+    clip-path: none !important;
+    position: relative;
+  }
+  .confiance-infos{
+    display: none;
+  }
+
+  /* Footer */
+  footer figure{
+    display: none;
+  }
+}
